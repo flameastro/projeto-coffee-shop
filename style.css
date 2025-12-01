@@ -103,6 +103,7 @@ main p {
 main section {
     padding: 10px;
     border-radius: 12px;
+    margin: 25px 0;
 }
 
 main section#home {
@@ -162,7 +163,6 @@ main section#about {
 main section#map {
     background-color: var(--color-v5);
     color: var(--color-v1);
-    margin: 10px 0;
 }
 
 main section#map p {
@@ -220,12 +220,19 @@ main section#contact form fieldset legend {
     font: bold 1.5em var(--outfit-font);
 }
 
-main section#contact form fieldset p input#nome, main section#contact form fieldset p input#email {
+main section#contact form fieldset p label img {
     position: relative;
-    bottom: 20px;
+    top: 7px;
+    display: inline-block;
+    width: 25px;
+}
+
+main section#contact form fieldset p input#nome, main section#contact form fieldset p input#email {
     padding: 5px;
     border-radius: 7px;
     border: none;
+    width: 85%;
+    display: inline-block;
 }
 
 main section#contact form fieldset p input#nome:focus, main section#contact form fieldset p input#email:focus, main section#contact form fieldset p textarea:focus {
@@ -237,6 +244,7 @@ main section#contact form fieldset p textarea {
     width: 100%;
     border: none;
     border-radius: 7px;
+    margin: 10px 0;
     height: 75px;
 }
 
@@ -248,3 +256,28 @@ main section#contact form fieldset p input#enviar {
     height: 40px;
     border: none;
 }
+
+
+footer {
+    margin-top: 50px;
+    background-color: var(--color-v5);
+    color: var(--color-v1);
+    height: 120px;
+    padding: 10px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font: normal 1em var(--poppins-font);
+    text-align: center;
+}
+
+footer p a {
+    font-weight: bold;
+    color: var(--color-v6);
+    text-decoration: none;
+}
+
