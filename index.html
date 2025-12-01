@@ -7,6 +7,11 @@
 
     <!-- CSS Styles -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=96&id=4Z50cycdnHdj&format=png" type="image/x-icon">
+
+    <!-- liquid-glass images available in https://icons8.com.br/icons/set/[image]--os-ios--style-liquid-glass -->
 </head>
 <body>
     <header>
@@ -15,6 +20,7 @@
             <a href="#"><img width="48" height="48" src="https://img.icons8.com/liquid-glass/48/info.png" alt="info"/></a>
             <a href="#"><img width="48" height="48" src="https://img.icons8.com/liquid-glass/48/map-marker.png" alt="map-marker"/></a>
             <a href="#"><img width="48" height="48" src="https://img.icons8.com/liquid-glass/48/shopping-cart.png" alt="shopping-cart"/></a>
+            <a href="#"><img width="48" height="48" src="https://img.icons8.com/liquid-glass/48/user-male-circle.png" alt="user-male-circle"/></a>
         </nav>
     </header>
 
@@ -38,11 +44,11 @@
             <p>Trabalhamos exclusivamente com cafés 100% arábica de origem rastreável, pontuados acima de 84 pontos (SCA), provenientes de produtores que valorizamos e visitamos regularmente.</p>
             <p>Nossa torrefação própria garante frescor absoluto: todos os cafés são torrados semanalmente em pequenos lotes, respeitando o perfil sensorial único de cada origem.</p>
         </section>
-
+ 
         <section id="map">
             <h2>Nossa localização</h2>
             <figcaption>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d977234.3593519147!2d-46.937151!3d-19.6019004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b037294181991d%3A0xa994aab19265a462!2zR3LDo28gQ2Fmw6k!5e1!3m2!1spt-BR!2sbr!4v1764547943763!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d977234.3593519147!2d-46.937151!3d-19.6019004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b037294181991d%3A0xa994aab19265a462!2zR3LDo28gQ2Fmw6k!5e1!3m2!1spt-BR!2sbr!4v1764547943763!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="location"></iframe>
                 <p>Local Fictício</p>
             </figcaption>
         </section>
@@ -121,8 +127,33 @@
                     <li>250g → R$ 58,00 | 1kg → R$ 198,00</li>
                 </ul>
             </article>
+        </section>
 
+        <section id="contact">
+            <form action="login.php" method="get">
+                <fieldset>
+                    <legend>Contato</legend>
+                    <p>
+                        <label for="nome"><img width="48" height="48" src="https://img.icons8.com/liquid-glass/48/test-account.png" alt="test-account"/></label>
+                        <input type="text" name="nome" id="nome" placeholder="seu nome" minlength="3" maxlength="50" autocomplete="name" required>
+                    </p>
 
+                    <p>
+                        <label for="email"><img width="48" height="48" src="https://img.icons8.com/liquid-glass/48/new-post.png" alt="new-post"/></label>
+                        <input type="email" name="email" id="email" placeholder="seu email" minlength="7" maxlength="65" autocomplete="email" required>
+                    </p>
+
+                    <p>
+                        <label for="mensagem"><img width="48" height="48" src="https://img.icons8.com/liquid-glass/48/chat-message.png" alt="chat-message"/></label>
+                        <textarea name="mensagem" id="mensagem" placeholder="Escreva sua mensagem"></textarea>
+                    </p>
+
+                    <p>
+                        <label for="enviar"><img width="48" height="48" src="https://img.icons8.com/liquid-glass/48/telegram-app.png" alt="telegram-app"/></label>
+                        <input type="submit" value="Enviar" id="enviar" name="enviar">
+                    </p>
+                </fieldset>
+            </form>
         </section>
     </main>
 </body>
