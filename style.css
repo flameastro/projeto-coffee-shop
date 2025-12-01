@@ -89,6 +89,10 @@ main h3 {
     font-family: var(--outfit-font);
 }
 
+main h1, main h2, main h3 {
+    text-align: center;
+}
+
 main p {
     margin: 5px 15px;
     text-align: justify;
@@ -150,20 +154,28 @@ main section#home div a button#buy-our-coffee {
 
 main section#about {
     background-color: var(--color-v6);
-    margin: 15px 0;
     border: 2px solid var(--color-v5);
+    margin: 15px 0;
 }
 
-main section#about h2 {
+
+main section#map {
+    background-color: var(--color-v5);
+    color: var(--color-v1);
+}
+
+main section#map p {
     text-align: center;
 }
 
-
-
-
-
-
 main section#map figcaption iframe {
-    height: 120px;
-    width: 250px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50vh;
+}
+
+main section#map figcaption p {
+    font: bold 0.9em var(--poppins-font);
+    text-align: center;
 }
