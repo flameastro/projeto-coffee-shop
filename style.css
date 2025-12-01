@@ -8,6 +8,7 @@
     --color-v5: #1b1002;
     --color-v6: #fffae6;
     --color-v7: #1b100270;
+    --color-v8: #f8cf7c;
 
     /* Fonts */
     --outfit-font: "Outfit", sans-serif;
@@ -279,5 +280,15 @@ footer p a {
     font-weight: bold;
     color: var(--color-v6);
     text-decoration: none;
+
+    transition: all 0.67s ease-in-out;
+}
+
+footer p a:hover {
+    text-shadow: 0 0 2.5px var(--color-v3);
+}
+
+footer p a:visited {
+    color: var(--color-v8);
 }
 
