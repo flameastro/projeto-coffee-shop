@@ -202,6 +202,7 @@ main section#buy article ul {
 
 main section#buy article ul li {
     list-style: square inside url("https://img.icons8.com/sf-black-filled/16/cafe.png");
+    margin: 7px 0;
 }
 
 
@@ -217,18 +218,18 @@ main section#contact form fieldset {
     border: none;
 }
 
-main section#contact form fieldset legend {
+main section#contact form legend {
     font: bold 1.5em var(--outfit-font);
 }
 
-main section#contact form fieldset p label img {
+main section#contact form label img {
     position: relative;
     top: 7px;
     display: inline-block;
     width: 25px;
 }
 
-main section#contact form fieldset p input#nome, main section#contact form fieldset p input#email {
+main section#contact form input#nome, main section#contact form input#email {
     padding: 5px;
     border-radius: 7px;
     border: none;
@@ -236,11 +237,11 @@ main section#contact form fieldset p input#nome, main section#contact form field
     display: inline-block;
 }
 
-main section#contact form fieldset p input#nome:focus, main section#contact form fieldset p input#email:focus, main section#contact form fieldset p textarea:focus {
+main section#contact form input#nome:focus, main section#contact form input#email:focus, main section#contact form textarea:focus {
     outline: 2.3px solid var(--color-v5);
 }
 
-main section#contact form fieldset p textarea {
+main section#contact form textarea {
     padding: 10px;
     width: 100%;
     border: none;
@@ -249,7 +250,7 @@ main section#contact form fieldset p textarea {
     height: 75px;
 }
 
-main section#contact form fieldset p input#enviar {
+main section#contact form p input#enviar {
     border-radius: 12px;
     font: bold 1em var(--poppins-font);
     width: 100%;
@@ -292,3 +293,77 @@ footer p a:visited {
     color: var(--color-v8);
 }
 
+
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    main {
+        max-width: 950px;
+        margin: auto;
+    }
+
+    main p {
+        font-size: 1em;
+    }
+
+    main section#home article {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main section#home article div {
+        flex-grow: 1;
+    }
+
+    main section#buy article ul {
+        margin-left: 25px;
+        font-size: 1.1em;
+    }
+
+    main section#buy article ul li {
+        margin: 10px 0;
+    }
+
+    main section#contact form div {
+        margin: 5px 15px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main section#contact form div p {
+        flex-grow: 1;
+    }
+
+    main section#contact form textarea {
+        height: 150px;
+    }
+
+    footer {
+        height: 75px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    main h1 {
+        font-size: 3.5em;
+    }
+
+    main h2 {
+        font-size: 2.2em;
+    }
+
+    main h3 {
+        font-size: 1.65em;
+    }
+
+    main p {
+        font-size: 1.25em;
+    }
+
+    main section#contact form legend {
+        font-size: 2.5em;
+    }
+}
