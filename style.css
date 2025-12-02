@@ -1,389 +1,412 @@
 /* General Styles */
 :root {
-    /* Colors */
-    --color-v1: #fff5d8;
-    --color-v2: #d2c49d;
-    --color-v3: #fff6e3;
-    --color-v4: #dfceab;
-    --color-v5: #1b1002;
-    --color-v6: #fffae6;
-    --color-v7: #1b100270;
-    --color-v8: #f8cf7c;
+  /* Colors */
+  --color-v1: #fff5d8;
+  --color-v2: #d2c49d;
+  --color-v3: #fff6e3;
+  --color-v4: #dfceab;
+  --color-v5: #1b1002;
+  --color-v6: #fffae6;
+  --color-v7: #1b100270;
+  --color-v8: #f8cf7c;
 
-    /* Fonts */
-    --outfit-font: "Outfit", sans-serif;
-    --poppins-font: "Poppins", sans-serif;
-    --tilt-warp-font: "Tilt Warp", sans-serif;
-    --manrope-font: "Manrope", sans-serif;
+  /* Fonts */
+  --outfit-font: "Outfit", sans-serif;
+  --poppins-font: "Poppins", sans-serif;
+  --tilt-warp-font: "Tilt Warp", sans-serif;
+  --manrope-font: "Manrope", sans-serif;
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-    width: 12px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--color-v4);
+  background: var(--color-v4);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--color-v5);
-    border-radius: 10px;
+  background: var(--color-v5);
+  border-radius: 10px;
 }
 
 /* Selection */
 ::selection {
-    background-color: var(--color-v5);
-    color: var(--color-v3);
+  background-color: var(--color-v5);
+  color: var(--color-v3);
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--color-v1);
-    font-family: var(--manrope-font);
+  background-color: var(--color-v1);
+  font-family: var(--manrope-font);
 }
 
 header {
-    background-color: var(--color-v5);
-    height: 95px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 17px black;
+  background-color: var(--color-v5);
+  height: 95px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 17px black;
 }
 
 header nav {
-    position: fixed;
-    background-color: #00000068;
-    backdrop-filter: blur(2px);
-    box-shadow: 0 0 8px #3c3c3c7c;
-    border-radius: 35px;
-    padding: 10px;
-    z-index: 1;
+  position: fixed;
+  background-color: #00000068;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 8px #3c3c3c7c;
+  border-radius: 35px;
+  padding: 10px;
+  z-index: 1;
 }
 
 header nav a {
-    margin: 1.5vw;
+  margin: 1.5vw;
 }
 
 header nav a img {
-    width: 35px;
-    transition: all, 0.2s ease-in;
+  width: 35px;
+  transition:
+    all,
+    0.2s ease-in;
 }
 
 header nav a img:hover {
-    filter: invert(0.2);
+  filter: invert(0.2);
 }
 
 header nav a img:active {
-    filter: invert(0.3);
+  filter: invert(0.3);
 }
 
 main {
-    padding: 15px;
+  padding: 15px;
 }
 
 main h1 {
-    text-shadow: 1px 1px 12px rgb(60, 60, 60);
-    font: normal 2.5em var(--tilt-warp-font);
-    color: var(--color-v1);
-    text-align: center;
-    border-width: 10px;
-    margin: 5px 0;
+  text-shadow: 1px 1px 12px rgb(60, 60, 60);
+  font: normal 2.5em var(--tilt-warp-font);
+  color: var(--color-v1);
+  text-align: center;
+  border-width: 10px;
+  margin: 5px 0;
 }
 
 main h2 {
-    font-family: var(--poppins-font);
+  font-family: var(--poppins-font);
 }
 
 main h3 {
-    font-family: var(--outfit-font);
+  font-family: var(--outfit-font);
 }
 
-main h1, main h2, main h3 {
-    text-align: center;
+main h1,
+main h2,
+main h3 {
+  text-align: center;
 }
 
 main p {
-    margin: 5px 15px;
-    text-align: justify;
-    font-size: 0.8em;
+  margin: 5px 15px;
+  text-align: justify;
+  font-size: 0.8em;
 }
 
-
 main section {
-    padding: 10px;
-    border-radius: 12px;
-    margin: 25px 0;
+  padding: 10px;
+  border-radius: 12px;
+  margin: 25px 0;
 }
 
 main section#home {
-    background-color: var(--color-v2);
-    color: var(--color-v5);
+  background-color: var(--color-v2);
+  color: var(--color-v5);
 }
 
 main section#home div {
-    margin: 10px;
+  margin: 10px;
 }
 
 main section#home div a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 main section#home div a button {
-    font: normal 1em var(--outfit-font);
-    border-radius: 12px;
-    cursor: pointer;
-    display: block;
-    padding: 16px;
-    margin: auto;
-    height: 35px;
-    width: 85%;
+  font: normal 1em var(--outfit-font);
+  border-radius: 12px;
+  cursor: pointer;
+  display: block;
+  padding: 16px;
+  margin: auto;
+  height: 35px;
+  width: 85%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 main section#home div a button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px var(--color-v7);
+  transform: scale(1.1);
+  box-shadow: 0 0 10px var(--color-v7);
 }
 
 main section#home div a button#about-our-shop {
-    border: 2.5px solid var(--color-v5);
-    background-color: var(--color-v1);
+  border: 2.5px solid var(--color-v5);
+  background-color: var(--color-v1);
 }
 
 main section#home div a button#buy-our-coffee {
-    background-color: var(--color-v5);
-    color: var(--color-v2);
-    border: none;
+  background-color: var(--color-v5);
+  color: var(--color-v2);
+  border: none;
 }
-
 
 main section#about {
-    background-color: var(--color-v6);
-    border: 2px solid var(--color-v5);
-    margin: 15px 0;
+  background-color: var(--color-v6);
+  border: 2px solid var(--color-v5);
+  margin: 15px 0;
 }
 
-
 main section#map {
-    background-color: var(--color-v5);
-    color: var(--color-v1);
+  background-color: var(--color-v5);
+  color: var(--color-v1);
 }
 
 main section#map p {
-    text-align: center;
+  text-align: center;
 }
 
 main section#map figcaption iframe {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 50vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 50vh;
 }
 
 main section#map figcaption p {
-    font: bold 0.9em var(--poppins-font);
-    text-align: center;
+  font: bold 0.9em var(--poppins-font);
+  text-align: center;
 }
 
-
 main section#buy {
-    background-color: var(--color-v4);
-    margin: 10px 0;
+  background-color: var(--color-v4);
+  margin: 10px 0;
 }
 
 main section#buy article {
-    background-color: var(--color-v3);
-    margin: 10px 0;
-    padding: 7px;
-    border-radius: 6.7px;
+  background-color: var(--color-v3);
+  margin: 10px 0;
+  padding: 7px;
+  border-radius: 6.7px;
+}
+
+main section#buy article#brasil-mantiqueira-de-minas {
+  margin-bottom: 0px;
 }
 
 main section#buy article ul {
-    font: normal 0.9em var(--manrope-font);
-    margin-left: 15px;
+  font: normal 0.9em var(--manrope-font);
+  margin-left: 15px;
 }
 
 main section#buy article ul li {
-    list-style: square inside url("https://img.icons8.com/sf-black-filled/16/cafe.png");
-    margin: 7px 0;
+  list-style: square inside
+    url("https://img.icons8.com/sf-black-filled/16/cafe.png");
+  margin: 7px 0;
 }
 
-
 main section#contact {
-    border: 2.5px solid var(--color-v5);
-    background-color: var(--color-v7);
-    padding: 10px 0;
+  border: 2.5px solid var(--color-v5);
+  background-color: var(--color-v7);
+  padding: 10px 0;
 }
 
 main section#contact form fieldset {
-    text-align: center;
-    border-radius: 7px;
-    border: none;
+  text-align: center;
+  border-radius: 7px;
+  border: none;
+}
+
+main section#contact form div {
+  gap: 5px;
 }
 
 main section#contact form legend {
-    font: bold 1.5em var(--outfit-font);
+  font: bold 1.5em var(--outfit-font);
+  margin: 0 auto 10px auto;
 }
 
 main section#contact form label img {
-    position: relative;
-    top: 7px;
-    display: inline-block;
-    width: 25px;
+  position: relative;
+  display: flex;
+  width: 25px;
 }
 
-main section#contact form input#nome, main section#contact form input#email {
-    padding: 5px;
-    border-radius: 7px;
-    border: none;
-    width: 85%;
-    display: inline-block;
+main section#contact form span {
+  width: 50%;
+  gap: 5px;
+  display: flex;
 }
 
-main section#contact form input#nome:focus, main section#contact form input#email:focus, main section#contact form textarea:focus {
-    outline: 2.3px solid var(--color-v5);
+main section#contact form input#nome,
+main section#contact form input#email {
+  padding: 5px;
+  border-radius: 7px;
+  border: none;
+  width: 100%;
+  display: inline-block;
+}
+
+main section#contact form input#nome:focus,
+main section#contact form input#email:focus,
+main section#contact form textarea:focus {
+  outline: 2.3px solid var(--color-v5);
 }
 
 main section#contact form textarea {
-    padding: 10px;
-    width: 100%;
-    border: none;
-    border-radius: 7px;
-    margin: 10px 0;
-    height: 75px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 7px;
+  margin: 10px 0;
+  height: 75px;
 }
 
 main section#contact form p input#enviar {
-    border-radius: 12px;
-    font: bold 1em var(--poppins-font);
-    width: 100%;
-    padding: 10px;
-    height: 40px;
-    border: none;
+  border-radius: 12px;
+  font: bold 1em var(--poppins-font);
+  width: 100%;
+  padding: 10px;
+  height: auto;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+
+  transition: all 0.2s ease-in-out;
 }
 
+main section#contact form p input#enviar:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 10px var(--color-v7);
+}
 
 footer {
-    margin-top: 50px;
-    background-color: var(--color-v5);
-    color: var(--color-v1);
-    height: 120px;
-    padding: 10px 0;
+  margin-top: 50px;
+  background-color: var(--color-v5);
+  color: var(--color-v1);
+  height: 120px;
+  padding: 10px 0;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer p {
-    font: normal 1em var(--poppins-font);
-    text-align: center;
+  font: normal 1em var(--poppins-font);
+  text-align: center;
 }
 
 footer p a {
-    font-weight: bold;
-    color: var(--color-v6);
-    text-decoration: none;
+  font-weight: bold;
+  color: var(--color-v6);
+  text-decoration: none;
 
-    transition: all 0.67s ease-in-out;
+  transition: all 0.67s ease-in-out;
 }
 
 footer p a:hover {
-    text-shadow: 0 0 2.5px var(--color-v3);
+  text-shadow: 0 0 2.5px var(--color-v3);
 }
 
 footer p a:visited {
-    color: var(--color-v8);
+  color: var(--color-v8);
 }
-
-
 
 /* Media Queries */
 @media screen and (min-width: 768px) {
-    main {
-        max-width: 950px;
-        margin: auto;
-    }
+  main {
+    max-width: 950px;
+    margin: auto;
+  }
 
-    main p {
-        font-size: 1em;
-    }
+  main p {
+    font-size: 1em;
+  }
 
-    main section#home article {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+  main section#home article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    main section#home article div {
-        flex-grow: 1;
-    }
+  main section#home article div {
+    flex-grow: 1;
+  }
 
-    main section#buy article ul {
-        margin-left: 25px;
-        font-size: 1.1em;
-    }
+  main section#buy article ul {
+    margin-left: 25px;
+    font-size: 1.1em;
+  }
 
-    main section#buy article ul li {
-        margin: 10px 0;
-    }
+  main section#buy article ul li {
+    margin: 10px 0;
+  }
 
-    main section#contact form div {
-        margin: 5px 15px;
+  main section#contact form div {
+    margin: 5px 15px;
 
-        display: flex;
-        justify-content: space-between;
-    }
+    display: flex;
+    justify-content: space-between;
+  }
 
-    main section#contact form div p {
-        flex-grow: 1;
-    }
+  main section#contact form div p {
+    flex-grow: 1;
+  }
 
-    main section#contact form textarea {
-        height: 150px;
-    }
+  main section#contact form textarea {
+    height: 150px;
+  }
 
-    footer {
-        height: 75px;
-    }
+  footer {
+    height: 75px;
+  }
 }
-
 
 @media screen and (min-width: 1200px) {
-    main h1 {
-        font-size: 3.5em;
-    }
+  main h1 {
+    font-size: 3.5em;
+  }
 
-    main h2 {
-        font-size: 2.2em;
-    }
+  main h2 {
+    font-size: 2.2em;
+  }
 
-    main h3 {
-        font-size: 1.65em;
-    }
+  main h3 {
+    font-size: 1.65em;
+  }
 
-    main p {
-        font-size: 1.25em;
-    }
+  main p {
+    font-size: 1.25em;
+  }
 
-    main section#contact form legend {
-        font-size: 2.5em;
-    }
+  main section#contact form legend {
+    font-size: 2.5em;
+  }
 }
+
