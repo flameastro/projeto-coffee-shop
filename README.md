@@ -2,6 +2,10 @@
 
 ---
 
+<img src="assets/project.png" alt="Imagem completa do projeto - Versão para Desktop">
+
+---
+
 ## 🌟 Sobre
 
 > Website desenvolvido por **flameastro** para fins educacionais
